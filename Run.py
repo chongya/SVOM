@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as tk
 from scipy.io import loadmat
 from calendar import isleap
-import sys
-sys.path.append("..")
 from Optimality import Optimality
 np.warnings.filterwarnings('ignore')
 
@@ -743,7 +741,7 @@ plt.draw()
 plt.rc('font',size=6)        
 fig.subplots_adjust(left=0.06,right=0.99,bottom=0.03,top=0.99,hspace=0.15,wspace=0.1)
 fig.set_size_inches(16.5/2.54,16.5/2.54*1.25)
-plt.savefig('C4.png',dpi=300)
+plt.savefig('Results.png',dpi=300)
 plt.close()
 
 msk = np.isfinite(X) & np.isfinite(Y)
